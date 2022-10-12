@@ -1,0 +1,10 @@
+syntax = "proto3"; //版本
+
+option java_package = "com.task.entity";//生成类的包名
+option java_outer_classname = "Role";//生成的外部类名，同时也是文件名
+
+message Character {
+  string userId=1; //用户Id
+  string role=2;//用户角色
+  map<string,string> map = 3;
+}
